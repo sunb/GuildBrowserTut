@@ -14,7 +14,7 @@
 - (void) testCharacterClassNameLookup{
     STAssertEqualObjects(@"Warrior", [WoWUtils classFromCharacterType:1], @"Class Type Should Be Warrior");
     STAssertFalse([@"Mage" isEqualToString:[WoWUtils classFromCharacterType:2]], nil);
-    STAssertFalse([@"Paladin" isEqualToString:[WoWUtils classFromCharacterType:2]], nil);
+    STAssertTrue([@"Paladin" isEqualToString:[WoWUtils classFromCharacterType:2]], nil);
 }
 
 @end
