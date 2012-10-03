@@ -22,7 +22,7 @@
                   nil);
     
 
-    STAssertTrue([@"Paladin" isEqualToString:[WoWUtils classFromCharacterType:2]],
+    STAssertFalse([@"Paladin" isEqualToString:[WoWUtils classFromCharacterType:2]],
                  nil);
 
 }
